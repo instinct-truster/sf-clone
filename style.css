@@ -1,0 +1,126 @@
+* {
+  /* border: 1px solid gray; */
+  font-family: "Chivo", sans-serif;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  margin: 12px 60px;
+  padding: 4px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: #000;
+}
+
+.logo-box {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-home-link {
+  font-size: x-large;
+  color: #000;
+}
+
+.site-tagline,
+.info {
+  color: #aaa;
+}
+
+.nav-options {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.banner-image {
+  object-fit: cover;
+  object-position: 50% 32%;
+  height: 150px;
+  width: 100%;
+}
+
+.active-fake {
+  color: rgb(230, 116, 10);
+}
+
+.header-container {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: url(/images/sfhawk.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 96px 0px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header-centered-top {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.header-centered-below {
+  text-align: center;
+  font-size: x-large;
+  color: #aaa;
+  letter-spacing: 4px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.preview {
+  display: flex;
+  flex: 1;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.preview > img {
+  width: 100%;
+  object-fit: fill;
+}
+
+@media (max-width: 768px) {
+  .flex-container,
+  .logo-box {
+    flex-direction: column;
+  }
+
+  .logo-box {
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  nav {
+    margin: 12px 8px;
+  }
+
+  .nav-options {
+    gap: 16px;
+    flex: 0;
+  }
+}
